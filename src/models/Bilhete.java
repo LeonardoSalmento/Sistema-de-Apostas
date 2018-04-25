@@ -7,9 +7,11 @@ public class Bilhete {
     private double valor = 5.00;
     private List<Aposta> apostas;
     private Apostador apostador;
+    private boolean premiado;
+    private static int incrementoId = 1;
 
     public Bilhete() {
-        this.id += 1;
+        this.id = incrementoId++;
     }
 
     public void setId(int id) {
@@ -36,6 +38,15 @@ public class Bilhete {
         return apostador;
     }
 
-	
-    
+    public void setPremiado(boolean premiado) {
+        this.premiado = premiado;
+    }
+
+    public boolean getPremiado() {
+        return premiado;
+    }
+
+    public double getValor() {
+        return valor;
+    }
 }
