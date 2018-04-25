@@ -5,6 +5,7 @@ public class Aposta {
     public Jogo jogo;
     private String palpite;
     private Bilhete bilhete;
+    private boolean acertou;
 
     public Aposta() {
         this.id += 1;
@@ -40,5 +41,15 @@ public class Aposta {
 
     public Bilhete getBilhete() {
         return bilhete;
+    }
+
+    public void setAcertou() {
+        if(this.jogo.getResultado().getDefinicao().equals(this.getPalpite())) {
+            this.acertou = true;
+        }
+    }
+
+    public boolean getAcertou() {
+        return acertou;
     }
 }

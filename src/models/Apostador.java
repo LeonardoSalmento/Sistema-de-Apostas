@@ -20,8 +20,8 @@ public class Apostador {
     public int getId() {
         return id;
     }
-    
-    
+
+
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -39,15 +39,15 @@ public class Apostador {
         return bilhete;
     }
 
-	public String getCpf() {
-		return cpf;
-	}
+    public String getCpf() {
+        return cpf;
+    }
 
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
-    
-    
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
 
-	
+
+
+
 }

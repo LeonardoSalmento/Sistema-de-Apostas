@@ -13,8 +13,8 @@ public class Campeonato {
         this.local = local;
         this.id += 1;
     }
-    
-    
+
+
 
     public void setId(int id) {
         this.id = id;
@@ -39,7 +39,7 @@ public class Campeonato {
     }
 
     public List<Jogo> getJogos() {
-        
-    	return jogos;
+
+        return jogos;
     }
 }
