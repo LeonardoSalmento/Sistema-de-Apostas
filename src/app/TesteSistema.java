@@ -163,11 +163,11 @@ public class TesteSistema {
 
 
             else if (opMenu == 2) {
-                mostrarBilhetes(bilhetes);
+                finalizarJogos(banco);
             }
 
             else if (opMenu == 3) {
-                finalizarJogos(banco);
+                mostrarBilhetes(bilhetes);
             }
 
             else if (opMenu == 4) {
@@ -222,8 +222,8 @@ public class TesteSistema {
     private static void menu(){
         System.out.println("*** Menu ***");
         System.out.println("1 - Comprar Bilhete");
-        System.out.println("2 - Mostrar Bilhetes");
-        System.out.println("3 - Finalizar Jogos");
+        System.out.println("2 - Finalizar Jogos");
+        System.out.println("3 - Mostrar Bilhetes");
         System.out.println("4 - Mostrar Valor a ser Pago para cada Vencedor");
         System.out.println("5 - Sair");
         System.out.print(">> ");
