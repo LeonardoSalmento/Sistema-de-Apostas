@@ -299,6 +299,11 @@ public class TesteSistema {
             if (bilhete.getApostas().get(i).getAcertou()) {
                 bilhete.setPremiado(true);
             }
+
+            else {
+                bilhete.setPremiado(false);
+                break;
+            }
         }
     }
 
