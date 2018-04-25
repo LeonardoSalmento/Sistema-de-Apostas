@@ -54,15 +54,15 @@ public class TesteSistema {
                         System.out.print(">> ");
                         int jogo = ler.nextInt();
                         mostrarOpcoesPalpite();
-                        int opMenuJogos = ler.nextInt();
+                        int opMenuPalpite = ler.nextInt();
 
-                        if (opMenuJogos == 1) {
+                        if (opMenuPalpite == 1) {
                             aposta.setPalpite("Casa");
                             aposta.setJogo(banco.getJogos().get(jogo-1));
                             apostas.add(aposta);
                         }
 
-                        else if(opMenuJogos == 2) {
+                        else if(opMenuPalpite == 2) {
                             aposta.setPalpite("Empate");
                             aposta.setJogo(banco.getJogos().get(jogo-1));
                             apostas.add(aposta);
@@ -87,19 +87,20 @@ public class TesteSistema {
                             }
 
                         }
-                        System.out.println("Escolha o jogo:");
+                        System.out.println("Escolha o Jogo:");
+                        System.out.print(">> ");
 
                         int jogo = ler.nextInt();
                         mostrarOpcoesPalpite();
-                        int opMenuJogos = ler.nextInt();
+                        int opMenuPalpite = ler.nextInt();
 
-                        if (opMenuJogos == 1){
+                        if (opMenuPalpite == 1){
                             aposta.setPalpite("Casa");
                             aposta.setJogo(banco.getJogos().get(jogo+9));
                             apostas.add(aposta);
                         }
 
-                        else if(opMenuJogos == 2) {
+                        else if(opMenuPalpite == 2) {
                             aposta.setPalpite("Empate");
                             aposta.setJogo(banco.getJogos().get(jogo+9));
                             apostas.add(aposta);
@@ -129,15 +130,15 @@ public class TesteSistema {
 
                         int jogo = ler.nextInt();
                         mostrarOpcoesPalpite();
-                        int opMenuJogos = ler.nextInt();
+                        int opMenuPalpite = ler.nextInt();
 
-                        if (opMenuJogos == 1) {
+                        if (opMenuPalpite == 1) {
                             aposta.setPalpite("Casa");
                             aposta.setJogo(banco.getJogos().get(jogo+19));
                             apostas.add(aposta);
                         }
 
-                        else if(opMenuJogos == 2) {
+                        else if(opMenuPalpite == 2) {
                             aposta.setPalpite("Empate");
                             aposta.setJogo(banco.getJogos().get(jogo+19));
                             apostas.add(aposta);
@@ -152,7 +153,7 @@ public class TesteSistema {
                     }
 
                     else {
-                        System.out.println("Opcão Invalida");
+                        System.out.println("Opcão Inválida!");
                     }
                 }
 
